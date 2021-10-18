@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    tools:viewBindingIgnore="true">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fav_card"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        >
+
+        <ImageButton
+            android:id="@+id/band_venue_icon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/band_venue_icon"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/band_venue_icon"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            />
+
+        <CheckBox
+            android:id="@+id/favorite_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favorites_icon"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/favorite_button_card"
+            style="?android:attr/starStyle"
+            android:buttonTint="@color/favorite_button_filled"
+            />
+
+        <TextView
+            android:id="@+id/band_venue_name"
+            android:text="@string/favorites_dummy_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/band_venue_icon"
+            android:layout_toStartOf="@id/favorite_button"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="7sp"
+            android:paddingEnd="5sp"
+            android:paddingTop="5sp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/band_venue_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/band_venue_name"
+            android:layout_toEndOf="@id/band_venue_icon"
+            android:layout_toStartOf="@id/favorite_button"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="7sp"
+            android:paddingEnd="5sp"
+            android:paddingTop="2sp"
+            android:text="@string/band_bio"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="18sp"
+
+            android:textColor="@android:color/black"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

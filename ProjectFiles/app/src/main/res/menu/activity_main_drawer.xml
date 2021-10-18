@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    tools:viewBindingIgnore="true">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_listings"
+            android:icon="@drawable/listings_icon"
+            android:title="@string/menu_listings" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/favorites_icon"
+            android:title="@string/menu_favorites" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/band_login"
+            android:title="@string/menu_login" />
+
+        <item
+            android:id="@+id/nav_post"
+            android:icon="@drawable/post_show_foreground"
+            android:title="@string/menu_post" />
+    </group>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_suggest"
+                android:icon="@drawable/suggest_venue"
+                android:title="@string/menu_suggest" />
+            <item
+                android:id="@+id/nav_report"
+                android:icon="@drawable/report_issue"
+                android:title="@string/menu_report" />
+        </menu>
+    </item>
+
+
+
+</menu>

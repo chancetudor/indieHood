@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">indieHood</string>
+    <string name="nav_header_title">indieHood</string>
+    <string name="nav_header_subtitle">find your beat</string>
+    <string name="menu_listings">Show Listings</string>
+    <string name="menu_favorites">Favorites</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_login">Artist Login</string>
+    <string name="menu_suggest">Suggest Venue</string>
+    <string name="menu_report">Report Issue</string>
+    <string name="menu_post">Post Show</string>
+
+    <string name="band_venue_icon">artist/venue icon</string>
+    <string name="favorite_button_card">favorite_button</string>
+    <string name="favorites_dummy_text">Add favorites and they\'ll appear here!</string>
+    <string name="band_bio">Band bio</string>
+    <string name="login_message">Artists, Login Below to Access Account</string>
+    <string name="password_hint">Password</string>
+    <string name="username_hint">Username</string>
+    <string name="register">Register</string>
+    <string name="menu_register">Register</string>
+    <string name="registration_title">To Register, Please Fill Out Form Below:</string>
+    <string name="communicate">Communicate</string>
+    <string name="empty_favorites_message">Add favorites and they\'ll appear here!</string>
+
+    <!-- Listing Filtering-->
+    <string name="filter">Filter</string>
+    <string-array name="filter_options">
+        <item>Filter Show Listings</item>
+        <item>Favorited: Bands</item>
+        <item>Date: Within 1 Week</item>
+        <item>Date: Within 1 Day</item>
+        <item>Price: Free</item>
+        <item>Interested: Yes</item>
+    <!--    <item>Interested: I'm Interested</item> add once mega user exists -->
+    </string-array>
+
+    <!-- Listing Sorting -->
+    <string-array name="sort_options">
+        <item>Date: Soonest First</item>
+        <item>Price: Cheapest First</item>
+        <item>Interested: Most First</item>
+    </string-array>
+
+    <!-- Strings used for fragments for navigation -->
+
+    <!-- Strings used for fragments for registration -->
+
+    <string name="wait">Please Wait 3 Minutes Before Logging In the First Time. Welcome to indieHood! </string>
+
+
+    <!-- Strings for Show Listing Placeholders -->
+    <string name="description">Description:</string>
+    <string name="details">Details:</string>
+    <string name="show_address">show address</string>
+    <string name="show_time">show time</string>
+    <string name="fulldate">fullDate</string>
+    <string name="favorited_artist">favorited artist</string>
+    <string name="_0">0</string>
+    <string name="bandname">BandName</string>
+    <string name="show_description">show Description</string>
+    <string name="address1">address1</string>
+    <string name="address2">address2</string>
+    <string name="price">Price</string>
+    <string name="fulltime">fullTime</string>
+    <string name="defaultDate">13th</string>
+    <string name="people_interested">People interested</string>
+    <string name="defaultTime">0:00 PM</string>
+    <string name="add_to_calendar">Add To Calendar</string>
+    <string name="i_m_interested">I\'m Interested</string>
+    <string name="interested">interested</string>
+    <string name="social1">social1</string>
+    <string name="social2">social2</string>
+    <string name="media1">streaming1</string>
+    <string name="media2">streamind2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="favorite_prompt">Favorite</string>
+    <string name="dummy_band_name">Band Name</string>
+    <string name="dummy_bio">This is a test band biography. Preferably, it will be about three lines long. This ensures that the recycler view below is not obscured.</string>
+    <string name="connect_prompt">Connect with the artist</string>
+
+</resources>

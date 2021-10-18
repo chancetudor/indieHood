@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_listings">
+    <fragment
+        android:id="@+id/nav_full_show"
+        android:name="com.indiehood.app.ui.show.ShowFragment"
+        android:label="Full Show"
+        tools:layout="@layout/fragment_full_show"
+        />
+    <fragment
+        android:id="@+id/nav_listings"
+        android:name="com.indiehood.app.ui.listings.ListingsFragment"
+        android:label="@string/menu_listings"
+        tools:layout="@layout/fragment_listings" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.indiehood.app.ui.favorites.FavoritesFragment"
+        android:label="@string/menu_favorites"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/nav_artist_view"
+        android:name="com.indiehood.app.ui.artist_view.ArtistFragment"
+        android:label="Artist Profile"
+        tools:layout="@layout/fragment_artist_view"
+        />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.indiehood.app.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.indiehood.app.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.indiehood.app.ui.register.RegisterFragment"
+        android:label="@string/menu_register"
+        tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/nav_suggest"
+        android:name="com.indiehood.app.ui.suggest.SuggestFragment"
+        android:label="@string/menu_suggest"
+        tools:layout="@layout/fragment_suggest" />
+
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.indiehood.app.ui.report.ReportFragment"
+        android:label="@string/menu_report"
+        tools:layout="@layout/fragment_report" />
+
+    <fragment
+        android:id="@+id/nav_post"
+        android:name="com.indiehood.app.ui.post.PostFragment"
+        android:label="@string/menu_post"
+        tools:layout="@layout/fragment_post" />
+
+
+</navigation>

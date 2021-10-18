@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:viewBindingIgnore="true">
+
+    <TextView
+        android:id="@+id/text_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/venueText"
+        android:layout_width="341dp"
+        android:layout_height="57dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/text_view_border"
+        android:ems="10"
+        android:fontFamily="@font/nunito_semibold"
+        android:gravity="start|top"
+        android:hint="Additional Comments"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_share"
+        app:layout_constraintVertical_bias="0.773" />
+
+    <EditText
+        android:id="@+id/venueNum"
+        android:layout_width="341dp"
+        android:layout_height="57dp"
+        android:background="@drawable/text_view_border"
+        android:ems="10"
+        android:fontFamily="@font/nunito_semibold"
+        android:hint="Venue Phone Number"
+        android:inputType="phone"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/venueAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_share"
+        app:layout_constraintVertical_bias="0.928" />
+
+    <EditText
+        android:id="@+id/venueAdd"
+        android:layout_width="341dp"
+        android:layout_height="57dp"
+        android:background="@drawable/text_view_border"
+        android:ems="10"
+        android:fontFamily="@font/nunito_semibold"
+        android:hint="Venue Address"
+        android:inputType="textPostalAddress"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/venueText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_share"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <Button
+        android:id="@+id/venueButton"
+        android:layout_width="334dp"
+        android:layout_height="52dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/nunito_semibold"
+        android:padding="15dp"
+        android:text="Submit Venue"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/venueText"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <EditText
+        android:id="@+id/venueName"
+        android:layout_width="341dp"
+        android:layout_height="57dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/text_view_border"
+        android:ems="10"
+        android:fontFamily="@font/nunito_semibold"
+        android:hint="Venue Name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/venueNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_share"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="308dp"
+        android:layout_height="143dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:text="Have a venue you'd like to see listed on indieHood? Tell us about it below!"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/venueName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.621" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="6dp"
+    app:cardBackgroundColor="#eaeaea"
+    app:cardCornerRadius="4dp"
+    tools:viewBindingIgnore="true">
+
+    <RelativeLayout
+        android:id="@+id/show_listing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/bandFavorited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/bandName"
+            android:paddingTop="13dp"
+            android:tint="#FFD600"
+            app:srcCompat="@drawable/favorites_icon" />
+
+        <ImageView
+            android:id="@+id/venueFavorited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/venue"
+            android:paddingTop="40dp"
+            />
+
+        <TextView
+            android:id="@+id/bandName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:text="Band Name"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/interested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:buttonTint="?android:attr/textColorLinkInverse" />
+
+        <TextView
+            android:id="@+id/interested_text"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/people_interested"
+            android:textColor="?android:attr/textColorLinkInverse"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bandName"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-3dp"
+            android:paddingStart="8dp"
+            android:text="Venue"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/calendartext"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:animateLayoutChanges="false"
+            android:background="@drawable/button_background"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-black"
+                android:text="month"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/defaultDate"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="57dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/defaultTime"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

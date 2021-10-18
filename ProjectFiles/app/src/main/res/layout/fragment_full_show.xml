@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:id="@+id/full_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+
+        <LinearLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#d3d3d3"
+            android:clickable="true"
+            android:focusable="true"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/bandName"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bandname"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="35sp"
+                android:padding="7dp"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/bandFavorited"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/favorited_artist"
+                android:tint="#FFD600"
+                app:srcCompat="@drawable/favorites_icon" />
+                <!-- app:srcCompat="@drawable/favorites_icon" -->
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/map"
+            tools:context=".ShowFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/top_bar"/>
+
+        <LinearLayout
+            android:id="@+id/metainfo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/map"
+            android:background="#d3d3d3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/interested"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_background"
+                android:padding="7dp"
+                android:text="@string/i_m_interested"
+                android:textColor="@android:color/black" />
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:id="@+id/full_interested_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/_0"
+                    android:textAlignment="center"
+                    android:textColor="?android:attr/textColorLinkInverse"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/full_interested_count"
+                    android:layout_marginTop="-2dp"
+                    android:text="@string/interested"
+                    android:textAlignment="center"
+                    android:textColor="?android:attr/textColorLinkInverse" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/addToCalendar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:padding="7dp"
+                android:text="@string/add_to_calendar"
+                android:textColor="@android:color/black"
+                android:background="@drawable/button_background"/>
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/metainfo">
+
+
+            <TextView
+                android:id="@+id/details_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:linksClickable="false"
+                android:text="@string/details"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="25sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:focusable="true"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/full_show_price"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/price"
+                android:textSize="25sp"
+                android:textColor="@android:color/holo_green_dark"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:id="@+id/time_marker"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/details_label"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                app:srcCompat="@drawable/ic_clock"
+                android:contentDescription="@string/show_time" />
+
+            <TextView
+                android:id="@+id/full_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_label"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/location_marker"
+                android:text="@string/fulldate"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/full_date"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/location_marker"
+                android:text="@string/fulltime"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/location_marker"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/time_marker"
+                app:srcCompat="@drawable/ic_location_marker"
+                android:contentDescription="@string/show_address" />
+
+            <TextView
+                android:id="@+id/address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/full_date"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/location_marker"
+                android:text="@string/address1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/address2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address1"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/location_marker"
+                android:text="@string/address2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/description_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:linksClickable="false"
+                android:text="@string/description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="25sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/address2"
+                android:focusable="true"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/show_description"
+                android:layout_width="400dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/description_label"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/show_description"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

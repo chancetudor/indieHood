@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "700789463168",
+    "firebase_url": "https://indiehood-app.firebaseio.com",
+    "project_id": "indiehood-app",
+    "storage_bucket": "indiehood-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700789463168:android:36e907e6766539c768ee65",
+        "android_client_info": {
+          "package_name": "com.indiehood.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700789463168-dt07njn8imq9a0q2733nj4fidkqm149s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYBnMFnzN8PSiomUekGu8s2AEKi50QPac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700789463168-dt07njn8imq9a0q2733nj4fidkqm149s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
